@@ -1,0 +1,5 @@
+class
+instanceof
+Class.isInstance
+Class.isAssignableFrom
+的区别
