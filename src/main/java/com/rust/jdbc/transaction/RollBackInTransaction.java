@@ -18,7 +18,7 @@ public class RollBackInTransaction {
     DataSourceTransactionManager transactionManager;
 
     @Transactional
-    public void rollBackIfNecessary() {
+    public void rollBackIfNecessary() throws Exception {
         DefaultTransactionDefinition definition = new DefaultTransactionDefinition();
         definition.setName("txnName");
         definition.setPropagationBehavior(TransactionDefinition.PROPAGATION_REQUIRED);
