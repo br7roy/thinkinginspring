@@ -46,8 +46,11 @@ public class App {
         proxyFactoryBean.addAdvice(throwAdvice);
 
         //7.通过ProxyFactoryBean生成Proxy对象
+<<<<<<< HEAD
         // getObject方法间接调用了ProxyFactoryBean.getProxy()，生成了代理对象
         // 之后使用jdk动态代理，或者CGLIB使用方法调用(invoke)
+=======
+>>>>>>> 486d7b36e16f37d33b0effb32b1e618f85853181
         TicketService ticketService = (TicketService) proxyFactoryBean.getObject();
         ticketService.sellTicket();
         ticketService.inquire();
